@@ -1,0 +1,8 @@
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+
+results/*.csv
+results/*.png
+
+example_results/test_output.csv
