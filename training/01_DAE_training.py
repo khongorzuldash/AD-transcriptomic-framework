@@ -49,7 +49,7 @@ NOISE_STD = 0.2
 OUTLIER_TOP_PERCENT = 5
 
 ROOT = Path(__file__).resolve().parent.parent
-INPUT_FILE = Path(r"D:/NATURE/New/24k_34_deseq2.csv")
+INPUT_FILE = ROOT / "data" / "full_expression_matrix.csv"
 RESULT_DIR = ROOT / "results"
 MODEL_DIR = ROOT / "models"
 
@@ -315,7 +315,7 @@ def save_model_files(model, scaler, expr_cols, threshold, n_genes, n_clean, n_ou
 
     metadata = {
         "model_name": "Human_DAE",
-        "input_dataset": "24k_34_deseq2.csv",
+        "input_dataset": "full_expression_matrix.csv",
         "input_description": "DESeq2-processed human RNA-seq expression matrix",
         "architecture": "34-64-2-64-34",
         "input_dim": len(expr_cols),

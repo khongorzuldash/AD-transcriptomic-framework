@@ -6,3 +6,7 @@ results/*.csv
 results/*.png
 
 example_results/test_output.csv
+
+data/MASTER_AE16_AE_50.csv
+results/
+figures/
